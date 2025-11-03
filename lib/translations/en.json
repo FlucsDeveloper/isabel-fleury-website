@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "psychotherapy": "Psychotherapy",
+    "dreamwork": "Dreamwork",
+    "meditation": "Meditation",
+    "contact": "Contact",
+    "bookSession": "Book a Session"
+  },
+  "home": {
+    "hero": {
+      "title": "Live with Heart & Meaning",
+      "subtitle": "Psychotherapy, Dreamwork, and Meditation — a space for pause and inner reconnection."
+    },
+    "services": {
+      "title": "Offerings",
+      "subtitle": "Three pathways to reconnection, rest, and inner wisdom.",
+      "psychotherapy": {
+        "title": "Psychotherapy",
+        "description": "Individual sessions rooted in Jungian and contemplative traditions. A space to explore what asks to be seen, felt, or transformed."
+      },
+      "dreamwork": {
+        "title": "Dreamwork",
+        "description": "A journey into the language of dreams. Learn to listen to your living unconscious and restore inner dialogue."
+      },
+      "meditation": {
+        "title": "Meditation",
+        "description": "Guided meditation and dharma talks rooted in Buddhist wisdom. A space to cultivate presence, clarity, and compassion."
+      }
+    },
+    "about": {
+      "title": "About Isabel",
+      "bio": "Born and raised in Brazil, Isabel Fleury is a psychologist and meditation teacher whose work bridges Jungian dreamwork and contemplative practice. Since moving to California in 2007 to study and work at the Esalen Institute in Big Sur, her path has been rooted in both depth psychology and the dharma.",
+      "quote": "A path of listening — where therapy, meditation, and dreams converge as ways to return home to the self.",
+      "cta": "Read More"
+    },
+    "cta": {
+      "title": "Begin Your Journey",
+      "subtitle": "If you feel called to begin, reach out. Together, we'll make space to come home to yourself.",
+      "button": "Book a Session"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Isabel Fleury",
+      "subtitle": "A path of listening — where therapy, meditation, and dreams converge"
+    },
+    "bio": {
+      "p1": "Born and raised in Brazil, Isabel Fleury is a psychologist and meditation teacher whose work bridges Jungian dreamwork and contemplative practice.",
+      "p2": "Since moving to California in 2007 to study and work at the Esalen Institute in Big Sur, her path has been rooted in both depth psychology and the dharma.",
+      "p3": "Her approach invites presence, warmth, and deep listening — guiding others to rest, reconnect, and rediscover the wisdom that speaks through dreams and silence alike.",
+      "p4": "Isabel's work draws from years of immersion in both Western depth psychology and Eastern contemplative traditions. She has studied Jungian analysis, Buddhist meditation, and somatic practices, weaving these threads into a unique approach that honors the wholeness of the human experience."
+    },
+    "philosophy": {
+      "title": "Approach & Philosophy",
+      "quote": "A path of listening — where therapy, meditation, and dreams converge as ways to return home to the self.",
+      "p1": "Isabel's work is grounded in the belief that healing is not about fixing or becoming someone other than who you are. Rather, it is about listening — to the unconscious, to the body, to the dreams that visit in the night, and to the silence that holds everything.",
+      "p2": "From Jung, she brings an understanding of the psyche as a living, symbolic realm — where dreams speak in images and the unconscious guides us toward individuation, the lifelong journey of becoming whole.",
+      "p3": "From the dharma, she brings practices of presence, compassion, and the recognition that suffering and freedom are both woven into the fabric of being human. Meditation becomes a way to rest in what is, to meet experience with openness rather than resistance."
+    },
+    "training": {
+      "title": "Training & Background",
+      "items": {
+        "psychology": {
+          "title": "Psychology & Psychotherapy",
+          "description": "Licensed psychologist with advanced training in Jungian analysis and depth psychology"
+        },
+        "esalen": {
+          "title": "Esalen Institute",
+          "description": "Studied and worked at Esalen Institute in Big Sur, California, immersing in somatic practices and humanistic psychology"
+        },
+        "meditation": {
+          "title": "Buddhist Meditation",
+          "description": "Trained meditation teacher with deep study in Buddhist philosophy and contemplative practices"
+        },
+        "dreamwork": {
+          "title": "Dreamwork",
+          "description": "Specialized training in Jungian dream analysis and the art of listening to the unconscious"
+        }
+      },
+      "cta": "Begin Your Journey"
+    },
+    "quote": "May this be a space where words become silence, and silence becomes home."
+  },
+  "footer": {
+    "tagline": "A space for pause and inner reconnection. Bridging psychotherapy, Jungian dreamwork, and contemplative practice.",
+    "offerings": "Offerings",
+    "connect": "Connect",
+    "bookSession": "Book a Session →",
+    "quote": "What was night becomes temple.",
+    "copyright": "© {year} Isabel Fleury. All rights reserved."
+  },
+  "buttons": {
+    "exploreOfferings": "Explore Offerings",
+    "bookSession": "Book a Session",
+    "learnMore": "Learn more",
+    "readMore": "Read More",
+    "sendMessage": "Send Message",
+    "sending": "Sending..."
+  }
+}

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import LanguageSwitcher from '@/components/ui/LanguageSwitcher'
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -43,7 +44,7 @@ export default function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -54,6 +55,7 @@ export default function Navigation() {
                 <span className="absolute bottom-0 left-0 w-0 h-px bg-sage transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
+            <LanguageSwitcher />
             <Link
               href="/contact"
               className="btn-primary text-sm"
@@ -97,6 +99,9 @@ export default function Navigation() {
                   {link.name}
                 </Link>
               ))}
+              <div className="flex justify-center py-2">
+                <LanguageSwitcher />
+              </div>
               <Link
                 href="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}

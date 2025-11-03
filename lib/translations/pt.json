@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "psychotherapy": "Psicoterapia",
+    "dreamwork": "Trabalho com Sonhos",
+    "meditation": "Meditação",
+    "contact": "Contato",
+    "bookSession": "Agendar Sessão"
+  },
+  "home": {
+    "hero": {
+      "title": "Viver com Coração e Sentido",
+      "subtitle": "Psicoterapia, Trabalho com Sonhos e Meditação — um espaço para pausa e reconexão interior."
+    },
+    "services": {
+      "title": "Ofertas",
+      "subtitle": "Três caminhos para reconexão, descanso e sabedoria interior.",
+      "psychotherapy": {
+        "title": "Psicoterapia",
+        "description": "Sessões individuais enraizadas nas tradições junguiana e contemplativa. Um espaço para explorar o que pede para ser visto, sentido ou transformado."
+      },
+      "dreamwork": {
+        "title": "Trabalho com Sonhos",
+        "description": "Uma jornada na linguagem dos sonhos. Aprenda a escutar seu inconsciente vivo e restaure o diálogo interior."
+      },
+      "meditation": {
+        "title": "Meditação",
+        "description": "Meditação guiada e ensinamentos dhármicos enraizados na sabedoria budista. Um espaço para cultivar presença, clareza e compaixão."
+      }
+    },
+    "about": {
+      "title": "Sobre Isabel",
+      "bio": "Nascida e criada no Brasil, Isabel Fleury é psicóloga e professora de meditação cujo trabalho une o trabalho com sonhos junguiano e a prática contemplativa. Desde que se mudou para a Califórnia em 2007 para estudar e trabalhar no Instituto Esalen em Big Sur, seu caminho tem sido enraizado tanto na psicologia profunda quanto no dharma.",
+      "quote": "Um caminho de escuta — onde terapia, meditação e sonhos convergem como formas de retornar ao lar do self.",
+      "cta": "Leia Mais"
+    },
+    "cta": {
+      "title": "Comece Sua Jornada",
+      "subtitle": "Se você se sente chamado a começar, entre em contato. Juntos, criaremos espaço para você voltar para casa, para si mesmo.",
+      "button": "Agendar Sessão"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Sobre Isabel Fleury",
+      "subtitle": "Um caminho de escuta — onde terapia, meditação e sonhos convergem"
+    },
+    "bio": {
+      "p1": "Nascida e criada no Brasil, Isabel Fleury é psicóloga e professora de meditação cujo trabalho une o trabalho com sonhos junguiano e a prática contemplativa.",
+      "p2": "Desde que se mudou para a Califórnia em 2007 para estudar e trabalhar no Instituto Esalen em Big Sur, seu caminho tem sido enraizado tanto na psicologia profunda quanto no dharma.",
+      "p3": "Sua abordagem convida presença, acolhimento e escuta profunda — guiando outros a descansar, reconectar e redescobrir a sabedoria que fala através dos sonhos e do silêncio.",
+      "p4": "O trabalho de Isabel vem de anos de imersão tanto na psicologia profunda ocidental quanto nas tradições contemplativas orientais. Ela estudou análise junguiana, meditação budista e práticas somáticas, tecendo esses fios em uma abordagem única que honra a totalidade da experiência humana."
+    },
+    "philosophy": {
+      "title": "Abordagem e Filosofia",
+      "quote": "Um caminho de escuta — onde terapia, meditação e sonhos convergem como formas de retornar ao lar do self.",
+      "p1": "O trabalho de Isabel está fundamentado na crença de que a cura não se trata de consertar ou tornar-se alguém diferente de quem você é. Trata-se, sim, de escutar — o inconsciente, o corpo, os sonhos que visitam à noite e o silêncio que tudo sustenta.",
+      "p2": "De Jung, ela traz uma compreensão da psique como um reino vivo e simbólico — onde os sonhos falam em imagens e o inconsciente nos guia em direção à individuação, a jornada de toda uma vida rumo à totalidade.",
+      "p3": "Do dharma, ela traz práticas de presença, compaixão e o reconhecimento de que sofrimento e liberdade estão entrelaçados no tecido do ser humano. A meditação torna-se uma forma de descansar no que é, de encontrar a experiência com abertura em vez de resistência."
+    },
+    "training": {
+      "title": "Formação e Experiência",
+      "items": {
+        "psychology": {
+          "title": "Psicologia e Psicoterapia",
+          "description": "Psicóloga com formação avançada em análise junguiana e psicologia profunda"
+        },
+        "esalen": {
+          "title": "Instituto Esalen",
+          "description": "Estudou e trabalhou no Instituto Esalen em Big Sur, Califórnia, imersa em práticas somáticas e psicologia humanista"
+        },
+        "meditation": {
+          "title": "Meditação Budista",
+          "description": "Professora de meditação treinada com estudo profundo em filosofia budista e práticas contemplativas"
+        },
+        "dreamwork": {
+          "title": "Trabalho com Sonhos",
+          "description": "Formação especializada em análise de sonhos junguiana e a arte de escutar o inconsciente"
+        }
+      },
+      "cta": "Comece Sua Jornada"
+    },
+    "quote": "Que este seja um espaço onde palavras se tornam silêncio, e silêncio se torna lar."
+  },
+  "footer": {
+    "tagline": "Um espaço para pausa e reconexão interior. Unindo psicoterapia, trabalho com sonhos junguiano e prática contemplativa.",
+    "offerings": "Ofertas",
+    "connect": "Conectar",
+    "bookSession": "Agendar Sessão →",
+    "quote": "O que era noite torna-se templo.",
+    "copyright": "© {year} Isabel Fleury. Todos os direitos reservados."
+  },
+  "buttons": {
+    "exploreOfferings": "Explorar Ofertas",
+    "bookSession": "Agendar Sessão",
+    "learnMore": "Saiba mais",
+    "readMore": "Leia Mais",
+    "sendMessage": "Enviar Mensagem",
+    "sending": "Enviando..."
+  }
+}
