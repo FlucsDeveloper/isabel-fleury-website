@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import FadeIn from '@/components/animations/FadeIn'
 
 export const metadata: Metadata = {
@@ -29,26 +30,56 @@ export default function AboutPage() {
       {/* Bio Section */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto">
-            <FadeIn delay={0.2}>
-              <p className="text-lg text-warmGray-light leading-relaxed mb-8">
-                Born and raised in Brazil, Isabel Fleury is a psychologist and meditation
-                teacher whose work bridges Jungian dreamwork and contemplative practice.
-                Since moving to California in 2007 to study and work at the Esalen Institute
-                in Big Sur, her path has been rooted in both depth psychology and the dharma.
-              </p>
-            </FadeIn>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+              {/* Portrait */}
+              <FadeIn delay={0.2}>
+                <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/images/about/isabel-portrait.jpg"
+                    alt="Isabel Fleury"
+                    fill
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                    onError={(e) => {
+                      // Fallback if image not found
+                      e.currentTarget.style.display = 'none'
+                      const parent = e.currentTarget.parentElement
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-full h-full bg-mist-100 flex items-center justify-center"><p class="text-warmGray-light">Portrait will appear here</p></div>'
+                      }
+                    }}
+                  />
+                </div>
+              </FadeIn>
 
-            <FadeIn delay={0.3}>
-              <p className="text-lg text-warmGray-light leading-relaxed mb-8">
-                Her approach invites presence, warmth, and deep listening — guiding others
-                to rest, reconnect, and rediscover the wisdom that speaks through dreams
-                and silence alike.
-              </p>
-            </FadeIn>
+              {/* Bio Text */}
+              <div>
+                <FadeIn delay={0.3}>
+                  <p className="text-lg text-warmGray-light leading-relaxed mb-6">
+                    Born and raised in Brazil, Isabel Fleury is a psychologist and meditation
+                    teacher whose work bridges Jungian dreamwork and contemplative practice.
+                  </p>
+                </FadeIn>
 
-            <FadeIn delay={0.4}>
-              <p className="text-lg text-warmGray-light leading-relaxed mb-12">
+                <FadeIn delay={0.4}>
+                  <p className="text-lg text-warmGray-light leading-relaxed mb-6">
+                    Since moving to California in 2007 to study and work at the Esalen Institute
+                    in Big Sur, her path has been rooted in both depth psychology and the dharma.
+                  </p>
+                </FadeIn>
+
+                <FadeIn delay={0.5}>
+                  <p className="text-lg text-warmGray-light leading-relaxed">
+                    Her approach invites presence, warmth, and deep listening — guiding others
+                    to rest, reconnect, and rediscover the wisdom that speaks through dreams
+                    and silence alike.
+                  </p>
+                </FadeIn>
+              </div>
+            </div>
+
+            <FadeIn delay={0.6}>
+              <p className="text-lg text-warmGray-light leading-relaxed text-center max-w-3xl mx-auto">
                 Isabel's work draws from years of immersion in both Western depth psychology
                 and Eastern contemplative traditions. She has studied Jungian analysis,
                 Buddhist meditation, and somatic practices, weaving these threads into

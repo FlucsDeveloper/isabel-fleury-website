@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import FadeIn from '@/components/animations/FadeIn'
+import YouTubeEmbed from '@/components/ui/YouTubeEmbed'
 
 export const metadata: Metadata = {
   title: 'Meditation | Isabel Fleury',
@@ -22,6 +24,22 @@ export default function MeditationPage() {
               <p className="text-xl text-warmGray-light leading-relaxed italic">
                 Meditation rooted in Buddhist wisdom
               </p>
+            </div>
+          </FadeIn>
+
+          {/* Meditation Altar Image */}
+          <FadeIn delay={0.3}>
+            <div className="relative max-w-4xl mx-auto mt-12 aspect-video rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/services/meditation-altar.jpg"
+                alt="Meditation altar with Buddha statue"
+                fill
+                className="object-cover"
+                onError={(e) => {
+                  // Hide if not found
+                  e.currentTarget.style.display = 'none'
+                }}
+              />
             </div>
           </FadeIn>
         </div>
@@ -141,6 +159,33 @@ export default function MeditationPage() {
                   Book a Meditation Session
                 </Link>
               </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Meditation Video */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <FadeIn>
+              <h2 className="text-3xl md:text-4xl font-serif text-warmGray mb-8 text-center">
+                Guided Meditation with Isabel
+              </h2>
+            </FadeIn>
+
+            <FadeIn delay={0.2}>
+              <p className="text-lg text-warmGray-light text-center mb-8 leading-relaxed">
+                Experience a guided meditation practice. This video offers a glimpse into
+                Isabel's approach to cultivating presence and inner peace.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.4}>
+              <YouTubeEmbed
+                videoId="v1Ch2RMvXrk"
+                title="Guided Meditation with Isabel Fleury"
+              />
             </FadeIn>
           </div>
         </div>

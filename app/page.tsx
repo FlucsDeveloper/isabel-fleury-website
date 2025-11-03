@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import ParallaxSection from '@/components/animations/ParallaxSection'
 import FadeIn from '@/components/animations/FadeIn'
 import ServiceCard from '@/components/ui/ServiceCard'
@@ -8,8 +9,23 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background with gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-mist-50 via-mist-100 to-moonlight/10" />
+        {/* Optional Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero/buddha-garden.jpg"
+            alt="Serene garden meditation space"
+            fill
+            className="object-cover opacity-20"
+            priority
+            onError={(e) => {
+              // Hide image if not found
+              e.currentTarget.style.display = 'none'
+            }}
+          />
+        </div>
+
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-mist-50/95 via-mist-100/90 to-moonlight/30" />
 
         <ParallaxSection className="relative z-10 w-full">
           <div className="container-custom text-center py-32">
