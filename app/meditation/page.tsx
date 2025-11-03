@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import FadeIn from '@/components/animations/FadeIn'
 import YouTubeEmbed from '@/components/ui/YouTubeEmbed'
+import OptionalImage from '@/components/ui/OptionalImage'
 
 export const metadata: Metadata = {
   title: 'Meditation | Isabel Fleury',
@@ -30,15 +30,12 @@ export default function MeditationPage() {
           {/* Meditation Altar Image */}
           <FadeIn delay={0.3}>
             <div className="relative max-w-4xl mx-auto mt-12 aspect-video rounded-2xl overflow-hidden shadow-2xl">
-              <Image
+              <OptionalImage
                 src="/images/services/meditation-altar.jpg"
                 alt="Meditation altar with Buddha statue"
                 fill
                 className="object-cover"
-                onError={(e) => {
-                  // Hide if not found
-                  e.currentTarget.style.display = 'none'
-                }}
+                fallbackText=""
               />
             </div>
           </FadeIn>

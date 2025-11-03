@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import FadeIn from '@/components/animations/FadeIn'
+import OptionalImage from '@/components/ui/OptionalImage'
 
 export const metadata: Metadata = {
   title: 'About Isabel Fleury',
@@ -35,19 +35,12 @@ export default function AboutPage() {
               {/* Portrait */}
               <FadeIn delay={0.2}>
                 <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
-                  <Image
+                  <OptionalImage
                     src="/images/about/isabel-portrait.jpg"
                     alt="Isabel Fleury"
                     fill
                     className="object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                    onError={(e) => {
-                      // Fallback if image not found
-                      e.currentTarget.style.display = 'none'
-                      const parent = e.currentTarget.parentElement
-                      if (parent) {
-                        parent.innerHTML = '<div class="w-full h-full bg-mist-100 flex items-center justify-center"><p class="text-warmGray-light">Portrait will appear here</p></div>'
-                      }
-                    }}
+                    fallbackText="Portrait will appear here"
                   />
                 </div>
               </FadeIn>

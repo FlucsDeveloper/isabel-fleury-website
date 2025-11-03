@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import ParallaxSection from '@/components/animations/ParallaxSection'
 import FadeIn from '@/components/animations/FadeIn'
 import ServiceCard from '@/components/ui/ServiceCard'
+import OptionalImage from '@/components/ui/OptionalImage'
 
 export default function HomePage() {
   return (
@@ -11,16 +11,13 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Optional Background Image */}
         <div className="absolute inset-0">
-          <Image
+          <OptionalImage
             src="/images/hero/buddha-garden.jpg"
             alt="Serene garden meditation space"
             fill
             className="object-cover opacity-20"
             priority
-            onError={(e) => {
-              // Hide image if not found
-              e.currentTarget.style.display = 'none'
-            }}
+            fallbackText=""
           />
         </div>
 
